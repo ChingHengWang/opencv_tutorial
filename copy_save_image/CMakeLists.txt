@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( CopySaveImage )
+find_package( OpenCV REQUIRED )
+add_executable( CopySaveImage CopySaveImage.cpp )
+target_link_libraries( CopySaveImage ${OpenCV_LIBS} )
