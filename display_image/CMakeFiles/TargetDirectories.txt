@@ -1,1 +1,2 @@
-/home/zach/opencv_ws/display_image/CMakeFiles/DisplayImage.dir
+/home/zach/opencv_ws/opencv_tutorial/display_image/CMakeFiles/DisplayImage.dir
+/home/zach/opencv_ws/opencv_tutorial/display_image/CMakeFiles/display.dir

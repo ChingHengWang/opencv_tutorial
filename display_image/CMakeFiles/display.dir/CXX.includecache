@@ -6,10 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/zach/opencv_ws/opencv_tutorial/display_image/DisplayImage.cpp
-stdio.h
--
+/home/zach/opencv_ws/opencv_tutorial/display_image/display.cpp
 opencv2/opencv.hpp
+-
+stdio.h
 -
 
 /usr/local/include/opencv/cxcore.h

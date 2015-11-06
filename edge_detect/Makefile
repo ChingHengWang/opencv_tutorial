@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zach/opencv_ws/opencv_tutorial/display_image
+CMAKE_SOURCE_DIR = /home/zach/opencv_ws/opencv_tutorial/edge_detect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zach/opencv_ws/opencv_tutorial/display_image
+CMAKE_BINARY_DIR = /home/zach/opencv_ws/opencv_tutorial/edge_detect
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zach/opencv_ws/opencv_tutorial/display_image/CMakeFiles /home/zach/opencv_ws/opencv_tutorial/display_image/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zach/opencv_ws/opencv_tutorial/edge_detect/CMakeFiles /home/zach/opencv_ws/opencv_tutorial/edge_detect/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zach/opencv_ws/opencv_tutorial/display_image/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zach/opencv_ws/opencv_tutorial/edge_detect/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -99,78 +99,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DisplayImage
+# Target rules for targets named edge_detect
 
 # Build rule for target.
-DisplayImage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DisplayImage
-.PHONY : DisplayImage
+edge_detect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 edge_detect
+.PHONY : edge_detect
 
 # fast build rule for target.
-DisplayImage/fast:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-.PHONY : DisplayImage/fast
+edge_detect/fast:
+	$(MAKE) -f CMakeFiles/edge_detect.dir/build.make CMakeFiles/edge_detect.dir/build
+.PHONY : edge_detect/fast
 
-#=============================================================================
-# Target rules for targets named display
-
-# Build rule for target.
-display: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 display
-.PHONY : display
-
-# fast build rule for target.
-display/fast:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/build
-.PHONY : display/fast
-
-DisplayImage.o: DisplayImage.cpp.o
-.PHONY : DisplayImage.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-DisplayImage.cpp.o:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o
-.PHONY : DisplayImage.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/edge_detect.dir/build.make CMakeFiles/edge_detect.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-DisplayImage.i: DisplayImage.cpp.i
-.PHONY : DisplayImage.i
-
-# target to preprocess a source file
-DisplayImage.cpp.i:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i
-.PHONY : DisplayImage.cpp.i
-
-DisplayImage.s: DisplayImage.cpp.s
-.PHONY : DisplayImage.s
-
-# target to generate assembly for a file
-DisplayImage.cpp.s:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s
-.PHONY : DisplayImage.cpp.s
-
-display.o: display.cpp.o
-.PHONY : display.o
-
-# target to build an object file
-display.cpp.o:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/display.cpp.o
-.PHONY : display.cpp.o
-
-display.i: display.cpp.i
-.PHONY : display.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-display.cpp.i:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/display.cpp.i
-.PHONY : display.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/edge_detect.dir/build.make CMakeFiles/edge_detect.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-display.s: display.cpp.s
-.PHONY : display.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-display.cpp.s:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/display.cpp.s
-.PHONY : display.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/edge_detect.dir/build.make CMakeFiles/edge_detect.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -178,16 +141,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... DisplayImage"
-	@echo "... display"
+	@echo "... edge_detect"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DisplayImage.o"
-	@echo "... DisplayImage.i"
-	@echo "... DisplayImage.s"
-	@echo "... display.o"
-	@echo "... display.i"
-	@echo "... display.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

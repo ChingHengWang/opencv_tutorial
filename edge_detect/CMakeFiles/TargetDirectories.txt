@@ -1,0 +1,1 @@
+/home/zach/opencv_ws/opencv_tutorial/edge_detect/CMakeFiles/edge_detect.dir

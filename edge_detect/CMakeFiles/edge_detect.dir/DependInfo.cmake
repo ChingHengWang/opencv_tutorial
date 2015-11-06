@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zach/opencv_ws/opencv_tutorial/display_image/DisplayImage.cpp" "/home/zach/opencv_ws/opencv_tutorial/display_image/CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o"
+  "/home/zach/opencv_ws/opencv_tutorial/edge_detect/main.cpp" "/home/zach/opencv_ws/opencv_tutorial/edge_detect/CMakeFiles/edge_detect.dir/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
