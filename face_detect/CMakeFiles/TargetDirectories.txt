@@ -1,0 +1,1 @@
+/home/zach/opencv_ws/opencv_tutorial/facedetect/CMakeFiles/FaceDetect.dir
