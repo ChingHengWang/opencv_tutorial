@@ -53,10 +53,24 @@ int main(int argc, char** argv)
 	namedWindow("Edge map", 1);
  
 	// 生成一個進度條來控制邊緣檢測
-	createTrackbar("Canny Threshold", "Edge map", &edgeThresh, 100, onTrackbar);
+	//createTrackbar("Canny Threshold", "Edge map", &edgeThresh, 100, onTrackbar);
  
 	//初始化圖像
-	onTrackbar(0,0);
+//	onTrackbar(0,0);
+
+	//blur 灰度圖片
+	blur(gray, edge, Size(3,3));
+ 
+	// Canny 邊緣檢測
+	//Canny(gray,edge, edgeThresh, edgeThresh*3, 3);
+ 
+	//全部設為0
+	//cedge = Scalar::all(0);
+ 
+	//拷貝邊緣的象素點
+	//image.copyTo(cedge, edge);
+
+	imshow("test", edge);
  
 	waitKey(0);
  
